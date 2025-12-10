@@ -9,7 +9,7 @@ describe('End-to-End UI + API Flow', () => {
     cy.get('input')
       .filter(':visible')
       .then(($i) => {
-        const name = 'Om_' + Date.now()
+        const name = 'Rohini_' + Date.now()
         const job = 'Cypress Intern'
 
         cy.wrap($i.eq(0)).clear().type(name)
